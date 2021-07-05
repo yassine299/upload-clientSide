@@ -1,6 +1,6 @@
 import axios from "axios"
 
-const apiUrl = "https://uploadfilenodejs.herokuapp.com/";
+const apiUrl = "https://uploadfilenodejs.herokuapp.com/api/";
 
 export const singleFileUpload = async (data) => {
     try {
