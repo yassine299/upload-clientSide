@@ -5,10 +5,7 @@ import { getsingleFiles, getMultipleFiles, multipfileUpload } from "./data/api"
 function App() {
   const [singleFiles, setSingleFiles] = useState([]);
   const [MultipFiles, setMultipFiles] = useState([]);
-  const picschange = [];
-  var picsindex = 1;
-  var mypic = document.getElementById("nextpic");
-  const url = "http://localhost:8080/";
+ 
 
 
   const getsingleFileslist = async () => {
@@ -33,24 +30,6 @@ function App() {
     }
   }
 
-  //const next = () => {
-  //    picschange.map(index => (
-  //    mypic.setAttribute("src", url + index[picsindex].filePath)
-  // console.log(index)
-  //))
-  //    picsindex++ 
-  //  console.log(picschange)
-  //}
-
-  // const fetchdata = async () => {
-  // const MultipfilesList = await getMultipleFiles();
-  //MultipfilesList.map(pic => (
-  // picschange.push(pic.files)
-
-  // ))
-  //picschange.map(index => (
-  // console.log(index)
-  // ))
 
 
   useEffect(() => {
@@ -84,7 +63,6 @@ function App() {
                 <div  key={file._id}>
                   <h6 >{"collection name: " + file.title}</h6>
                   <div className="row">
-                  <button className="btn btn-danger">Delete</button>
                     {file.files.map((pic) =>
                       <div className="col-6 border">
                         <div className="card mb-2 border-0 p-0">
