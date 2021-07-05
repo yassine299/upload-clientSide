@@ -51,7 +51,7 @@ function App() {
                 {singleFiles.map((file, index) =>
                   <div className="col-6">
                     <div className="card mb-2 border-0 p-0">
-                      <img src={`https://uploadfilenodejs.herokuapp.com/${file.filePath}`} height="220" width="300" className="card-img-top img-responsive" alt="" />
+                      <img src={`https://uploadfilenodejs.herokuapp.com/${file.filePath}`} height="320" width="300" className="card-img-top img-responsive" alt="" />
                     </div>
                   </div>
                 )}
@@ -66,7 +66,7 @@ function App() {
                     {file.files.map((pic) =>
                       <div className="col-6 border">
                         <div className="card mb-2 border-0 p-0">
-                          <img src={`https://uploadfilenodejs.herokuapp.com/${pic.filePath}`} height="220" width="400" className="card-img-top img-responsive" alt="" />
+                          <img src={`https://uploadfilenodejs.herokuapp.com/${pic.filePath}`} height="320" width="400" className="card-img-top img-responsive" alt="" />
                         </div>
                       </div>
                     )}
